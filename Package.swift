@@ -1,5 +1,5 @@
 // swift-tools-version: 5.9
-// MediaNetAdSDK — version 1.0.0
+// MediaNetAdSDK — version 1.0.1
 //
 // Wrapper-only distribution manifest (repo split, >= 0.4.8):
 //   - OMSDK_Medianet comes from the OMSDK-Medianet-dist package — never declare
@@ -40,15 +40,15 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MediaNetAdSDK",
-            url: "https://github.com/media-net/MediaNetAdSDK-dist/releases/download/v1.0.0/MediaNetAdSDK.xcframework.zip",
-            checksum: "0111602c0d970774d0f792aa86082b7774c369a8a8200ba66cf7e769d5884f85"
+            url: "https://github.com/media-net/MediaNetAdSDK-dist/releases/download/v1.0.1/MediaNetAdSDK.xcframework.zip",
+            checksum: "7bb8861c03e999e10c71045c86bd5aba9e32b740ca80429e21557a9f218a1ef4"
         ),
         // Namespaced Prebid Mobile fork the wrapper links. Hosted here because a
         // binary target cannot bundle another binary's dependencies.
         .binaryTarget(
             name: "MNPrebidMobile",
-            url: "https://github.com/media-net/MediaNetAdSDK-dist/releases/download/v1.0.0/MNPrebidMobile.xcframework.zip",
-            checksum: "4debce25e8a74d815ac84dce67628be75cea6b6f3a6b15e21b546a623648e164"
+            url: "https://github.com/media-net/MediaNetAdSDK-dist/releases/download/v1.0.1/MNPrebidMobile.xcframework.zip",
+            checksum: "87e3c68d7b1329a584810b130fe8075eaa0868912f287cb151ca0d9fe082de70"
         ),
         // Carries the GoogleMobileAds + OMSDK_Medianet package edges into the
         // product link graph (binary targets cannot declare dependencies).
